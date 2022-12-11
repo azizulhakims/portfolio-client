@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import image from '../../../img/Untitled-2.jpg'
 
 const Slider = () => {
@@ -15,7 +16,7 @@ const Slider = () => {
                     <h1 className="text-5xl font-bold py-5">Azizul Hakim</h1>
                     <h1 className="text-2xl font-bold">Web Developer</h1>
                     <p className="py-3">Hello! I am a web developer, mainly i develop web application with ReactJS</p>
-                    <button className="btn btn-primary">Connect with Me</button>
+                    <button className="btn btn-primary"><Link to='/contact'>Connect with Me</Link></button>
                 </div>
             </div>
         </div>

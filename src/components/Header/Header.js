@@ -14,7 +14,7 @@ const Header = () => {
                         <li><Link to='/service'>Service</Link></li>
                         <li><Link to='/portfolio'>Portfolio</Link></li>
 
-                        <li><Link>Contract Me</Link></li>
+                        <li><Link to='/contact'>Contract Me</Link></li>
                     </ul>
                 </div>
                 <a className="btn btn-ghost normal-case text-xl">Azizul Hakim Portfolio </a>
@@ -25,11 +25,12 @@ const Header = () => {
                     <li><Link to='/service'>Service</Link></li>
 
                     <li><Link to='/portfolio'>Portfolio</Link></li>
-                    <li><Link>Contract Me</Link></li>
+                    <li><Link to='/contact'>Contract Me</Link></li>
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">See Resume</a>
+                <a href="Resume Azizul Hakim.pdf" download="Resume Azizul Hakim.pdf" className='btn'>See Resume</a>
+
             </div>
         </div>
     );

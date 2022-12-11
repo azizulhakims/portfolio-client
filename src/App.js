@@ -4,6 +4,7 @@ import Main from './layouts/Main';
 import Home from './components/Home/Home';
 import Portfolio from './components/Portfolio/Portfolio';
 import Service from './components/Service/Service';
+import Contact from './components/Contact/Contact';
 
 
 
@@ -24,6 +25,10 @@ function App() {
         {
           path: '/service',
           element: <Service></Service>
+        },
+        {
+          path: '/contact',
+          element: <Contact></Contact>
         },
 
       ]
