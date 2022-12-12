@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 const SingelPortfolio = ({ portfolios }) => {
-    const { img, title, description, liveLink } = portfolios;
+    const { _id, img, title, description, liveLink } = portfolios;
 
     return (
         <div className="card card-compact w-96 bg-base-100 shadow-xl p-4">
@@ -13,7 +13,9 @@ const SingelPortfolio = ({ portfolios }) => {
                 <p>{description}</p>
 
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Project Details</button>
+                    <Link to={`/portfoliodetails/${_id}`}> <div className=' card-actions justify-end'>
+                        <button className="btn btn-warning ">Project Details</button>
+                    </div></Link>
                     <button className="btn btn-ghost"><a href={liveLink}>Live Link</a></button>
                 </div>
             </div>

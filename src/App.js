@@ -5,6 +5,9 @@ import Home from './components/Home/Home';
 import Portfolio from './components/Portfolio/Portfolio';
 import Service from './components/Service/Service';
 import Contact from './components/Contact/Contact';
+import PortfolioDetails from './components/Portfolio/PortfolioDetails';
+import Blog from './components/Blog/Blog';
+import AboutMe from './components/Home/Aboutme/AboutMe';
 
 
 
@@ -23,13 +26,30 @@ function App() {
           element: <Portfolio></Portfolio>,
         },
         {
+          path: '/portfoliodetails/:id',
+          element: <PortfolioDetails></PortfolioDetails>,
+          loader: ({ params }) => fetch(`https://portfolio-website-server-azizulhakims.vercel.app/portfolio/${params.id}`)
+        },
+        {
           path: '/service',
           element: <Service></Service>
         },
+
         {
           path: '/contact',
           element: <Contact></Contact>
         },
+
+        {
+          path: '/blog',
+          element: <Blog></Blog>
+        },
+
+        {
+          path: '/about-me',
+          element: <AboutMe></AboutMe>
+        },
+
 
       ]
     }

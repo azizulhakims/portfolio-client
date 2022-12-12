@@ -1,6 +1,7 @@
 import React from 'react';
 import Contact from '../Contact/Contact';
 import Portfolio from '../Portfolio/Portfolio';
+import AboutMe from './Aboutme/AboutMe';
 import Slider from './Slider/Slider';
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
             <Slider></Slider>
             <Portfolio></Portfolio>
             <Contact></Contact>
+            <AboutMe></AboutMe>
         </div>
     );
 };

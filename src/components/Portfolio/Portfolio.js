@@ -4,7 +4,7 @@ import SingelPortfolio from './SingelPortfolio';
 const Portfolio = () => {
     const [portfolio, setPortfolio] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/portfolio')
+        fetch('https://portfolio-website-server-azizulhakims.vercel.app/portfolio')
             .then(res => res.json())
             .then(data => setPortfolio(data))
     }, [])
@@ -17,7 +17,7 @@ const Portfolio = () => {
             </div>
             <div>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20'>
                     {
                         portfolio.map(portfolios => <SingelPortfolio
                             key={portfolios._id}

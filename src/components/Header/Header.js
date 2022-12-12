@@ -13,8 +13,9 @@ const Header = () => {
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/service'>Service</Link></li>
                         <li><Link to='/portfolio'>Portfolio</Link></li>
-
-                        <li><Link to='/contact'>Contract Me</Link></li>
+                        <li><Link to='/contact'>Contact Me</Link></li>
+                        <li><Link to='/about-me'>About Me</Link></li>
+                        <li><Link to='/blog'>Blog</Link></li>
                     </ul>
                 </div>
                 <a className="btn btn-ghost normal-case text-xl">Azizul Hakim Portfolio </a>
@@ -23,9 +24,10 @@ const Header = () => {
                 <ul className="menu menu-horizontal px-1">
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/service'>Service</Link></li>
-
                     <li><Link to='/portfolio'>Portfolio</Link></li>
-                    <li><Link to='/contact'>Contract Me</Link></li>
+                    <li><Link to='/contact'>Contact Me</Link></li>
+                    <li><Link to='/about-me'>About Me</Link></li>
+                    <li><Link to='/blog'>Blog</Link></li>
                 </ul>
             </div>
             <div className="navbar-end">
